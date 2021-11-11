@@ -1,0 +1,284 @@
+
+/*HEADER STYLE*/
+
+
+.header{
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:var(--clr-bg-dark);
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    flex: 0 0 80px;
+    position:sticky;
+    line-height: 80px;
+}
+
+.img-logo{
+    width: 100%;
+    height: auto;
+    margin:14px;
+}
+
+.menu-ul{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: capitalize;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    color: var(--clr-accent-200);
+    transition: 0.5s;
+}
+
+.boton{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    margin-top: 0.5px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+
+    .carrusel{
+        z-index: 0;
+    }
+
+    .menu-ul{
+        z-index: 2;
+    }
+
+  
+    .logo{
+        line-height: 50px;
+    } 
+    
+    .menu-ul{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        align-items:center;
+        margin-top: 10px;
+        margin-right: 0;
+        background: var(--clr-accent-600);
+        position:fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        color: var(--clr-bg-dark);
+    }
+
+    .boton{
+    display: block;
+    line-height: 0px;
+}
+
+.menu-ul-visible{
+    left: 0;
+}
+
+.boton:focus:not(:focus-visible){
+    outline: none;
+}
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor{
+        width: 100%;
+        position: relative;
+        height: 580px;
+    }
+
+    .cardNosotros{
+        flex-wrap: none;
+    }
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position:absolute;
+    width: 100%;
+    background-color:var(--clr-bg-dark);
+    color: var(--clr-txt-white);
+
+}
+
+footer a{
+    line-height: 80px;
+    list-style-type: none;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.socialMedia{
+    margin-left: 1em;
+}
+
+.footer-logo{
+    width: 50%;
+    height: auto;
+    margin-right: 1px;
+}
+
+
+
+
+
+/*CARROUSEL*/
+
+.contenedor{
+    width: 100%;
+    position: relative;
+    height: 580px;
+}
+
+.botones{
+    font-size: 80px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: var(--clr-bg-light);
+    text-align:center;
+    font-weight: bold;
+    position: absolute;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.atras{
+    left:2%;
+    top: calc(50% - 50px);
+}
+.adelante{
+    right: 2%;
+    top: calc(50% - 50px);
+}
+
+.logoOrigen{
+    flex: 0 0 80px;
+    position:sticky;
+    line-height: 60px;
+
+}
+
+
+
+/*Card Nosotros*/
+
+.container{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: none;
+}
+.cardNosotros{
+    background-color:var(--clr-bg-dark) ;
+    width: 1500px;
+    height:inherit;
+    display: flex;
+}
+.cardImagen{
+    flex: 0 0 50%; 
+    position: relative;
+}
+.cardDescripcion{
+    flex: 1;
+    padding: 35px 35px 25px 35px;
+
+}
+
+
+
+/*CARD MENU*/
+.cardContenedor{
+    display: flex;
+    flex-wrap: none;
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    margin: auto;
+    justify-content: center;
+
+}
+.cardContenedor .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.cardContenedor .card img{
+    width: 330px;
+    height: 220px;
+}
+
