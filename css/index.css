@@ -33,6 +33,7 @@
     width: 100%;
     height: auto;
     margin:14px;
+    background-image: url(/imagen/logoVectoral.png);
 }
 
 .menu-ul{
@@ -74,6 +75,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .card p{
+        font-size: 12.5px;
+    }
+
 
     .carrusel{
         z-index: 0;
@@ -142,6 +148,7 @@
     .cardNosotros{
         flex-wrap: none;
     }
+ 
 }
 
 
@@ -152,7 +159,7 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    position:absolute;
+    position: relative;
     width: 100%;
     background-color:var(--clr-bg-dark);
     color: var(--clr-txt-white);
@@ -169,15 +176,15 @@ footer a{
 }
 
 
+.logo-footer{
+ 
+    background-image: url(/imagen/logoVectoral.png);
+}
+
 .socialMedia{
     margin-left: 1em;
 }
 
-.footer-logo{
-    width: 50%;
-    height: auto;
-    margin-right: 1px;
-}
 
 
 
@@ -220,12 +227,7 @@ footer a{
     top: calc(50% - 50px);
 }
 
-.logoOrigen{
-    flex: 0 0 80px;
-    position:sticky;
-    line-height: 60px;
 
-}
 
 
 
@@ -251,18 +253,18 @@ footer a{
 }
 .cardDescripcion{
     flex: 1;
-    padding: 35px 35px 25px 35px;
+    padding: 35px 35px 35px 35px;
 
 }
 
 
 
-/*CARD MENU*/
+
+/*CARD DOBLE MENU*/
 .cardContenedor{
     display: flex;
     flex-wrap: none;
     width: 100%;
-    max-width: 1200px;
     height: 430px;
     margin: auto;
     justify-content: center;
@@ -271,7 +273,7 @@ footer a{
 .cardContenedor .card{
     width: 330px;
     height: 430px;
-    border-radius: 8px;
+    border-radius: 1px;
     overflow: hidden;
     margin: 20px;
     text-align: center;
@@ -282,3 +284,18 @@ footer a{
     height: 220px;
 }
 
+
+/*BOTON*/
+.boton-home{
+    display: flex;
+    background: var(--clr-bg-light);
+    text-transform: capitalize;
+    font-size: 10px;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    letter-spacing: .1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

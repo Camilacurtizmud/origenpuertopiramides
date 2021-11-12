@@ -1,4 +1,4 @@
-var imagenes = ['/imagen/brunchMesa.jpg', '/imagen/brunchoDos.jpg', '/imagen/local.jpg'],
+var imagenes = ['./imagen/brunchoDos.jpg', './imagen/brunchMesa.jpg', './imagen/local.jpg'],
     cont = 0;
 
 function carrousel(contenedor) {
