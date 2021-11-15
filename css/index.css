@@ -2,6 +2,7 @@
 /*HEADER STYLE*/
 
 
+
 .header{
     justify-content: space-between;
     height: 80px;
@@ -74,6 +75,20 @@
 
 }
 
+
+
+
+
+#informacion-home{
+    text-align: center;
+    
+}
+
+
+
+
+/*MEDIA RESPOSIVE*/
+
 @media (max-width: 768px) {
 
     .card p{
@@ -90,6 +105,11 @@
     }
 
   
+#parrafo-card{
+    font-size: 11px;
+}
+
+
     .logo{
         line-height: 50px;
     } 
@@ -148,43 +168,9 @@
     .cardNosotros{
         flex-wrap: none;
     }
+
  
-}
-
-
-
-/*FOOTER*/
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    position: relative;
-    width: 100%;
-    background-color:var(--clr-bg-dark);
-    color: var(--clr-txt-white);
-
-}
-
-footer a{
-    line-height: 80px;
-    list-style-type: none;
-    margin: 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-
-.logo-footer{
- 
-    background-image: url(/imagen/logoVectoral.png);
-}
-
-.socialMedia{
-    margin-left: 1em;
-}
-
+} 
 
 
 
@@ -241,12 +227,14 @@ footer a{
     align-items: center;
     flex-wrap: none;
 }
+
 .cardNosotros{
     background-color:var(--clr-bg-dark) ;
     width: 1500px;
     height:inherit;
     display: flex;
 }
+
 .cardImagen{
     flex: 0 0 50%; 
     position: relative;
@@ -254,6 +242,7 @@ footer a{
 .cardDescripcion{
     flex: 1;
     padding: 35px 35px 35px 35px;
+    margin: 30px;
 
 }
 
@@ -285,17 +274,238 @@ footer a{
 }
 
 
+
+
 /*BOTON*/
-.boton-home{
+#botonHome{
     display: flex;
+    align-items: center;
     background: var(--clr-bg-light);
     text-transform: capitalize;
-    font-size: 10px;
-    padding: 1%;
-    margin: 1%;
-    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    height: 30px;
     letter-spacing: .1em;
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    width: 100%;
+    background-color:var(--clr-bg-dark);
+    color: var(--clr-txt-white);
+
+}
+
+footer a{
+    line-height: 80px;
+    list-style-type: none;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.logo-footer{
+ 
+    background-image: url(/imagen/logoVectoral.png);
+}
+
+.socialMedia{
+    margin-left: 1em;
+}
+
+#img-logo{
+ width: 100%;
+ position:unset;
+ height: 2em;
+}
+
+
+/*NOSOTROS*/
+
+.containerNosotros{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: none;
+    overflow: hidden
+}
+
+.cardNosotros-nosotros{
+    background-color:var(--clr-bg-white) ;
+    width: 100%;
+    height:50em;
+    display: flex;
+}
+
+.cardImagen-nosotros{
+    flex: 0 20 60%; 
+    
+    position: relative;
+}
+.cardDescripcion-nosotros{
+    flex: 1;
+    padding: 35px 35px 35px 35px;
+    margin: 60px;
+    margin-top: 15%;
+    font-size: 20px;
+}
+
+#parrafo-card-nosotros{
+   font-size: 15px;
+}
+
+/* MENU */
+
+#contenedor-menu{
+    height: auto;
+    margin-bottom: 0em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: none;
+    overflow: hidden;
+}
+
+.menu-bebidas{
+    width: 100%;
+    height:auto;
+    display: flex;
+    background-color: var(--clr-bg-dark);
+}
+
+.menu-comidas{
+    width: 100%;
+    height:auto;
+    display: flex;
+    background-color: var(--clr-bg-white)
+}
+
+#img-menu{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-imagenes{
+    width: 100%;
+    height: auto;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+
+ 
+}
+
+#main-menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color:var(--clr-accent-600);
+
+}
+
+/*FORMULARIO*/
+
+input,
+select,
+option,
+textarea{
+    padding: .5em;
+    border: none;
+    background: var(--clr-bg-dark);
+    color: var(--clr-txt-light);
+    resize: none;
+    width: 100%;
+    border-radius: none;
+}
+
+textarea{
+    min-height: 200px;
+}
+
+
+form.form-contact{
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 60%;
+    margin:0 auto;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+form.form-contact label{
+    margin-bottom: .3em;
+}
+
+form.form-contact input,
+form.form-contact select,
+form.form-contact textarea {
+    margin-bottom: .55em;
+}
+
+form.form-contact .btn{
+    margin-top: 3em ;
+    padding-top: .8em;
+    padding-bottom: .7em;
+
+}
+
+.btn-contacto{
+    border-radius: .3em;
+    padding: .3em 1em;
+    text-align: center;
+    letter-spacing: .1em;
+    outline: none;
+    border: none;
+    cursor: grab;
+}
+
+.btn-pri{
+    background: var(--clr-bg-dark);
+    color: var(--clr-bg-white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-txt{
+    text-decoration: underline;
+    text-underline-offset: .4em;
+}
+
+.st-c{
+    margin-top: .3em;
+}
+
+
+
+#formulario-caja{
+    width: 100%;
+    height:30em;
+    display: flex;
+    justify-content: space-around;
+}
+#imagen-formulario{
+    width: 100%;
+    max-width: 640px;
+    height: 80%;
+    margin: 10px;
+    object-fit:unset;
 }
