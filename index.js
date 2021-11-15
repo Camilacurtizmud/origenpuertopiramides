@@ -1,4 +1,4 @@
-var imagenes = ['./imagen/brunchoDos.jpg', './imagen/brunchMesa.jpg', './imagen/local.jpg'],
+var imagenes = ['https://github.com/Camilacurtizmud/origenpuertopiramides/blob/main/imagen/brunchoDos.jpg?raw=true', './imagen/brunchMesa.jpg', './imagen/local.jpg'],
     cont = 0;
 
 function carrousel(contenedor) {
